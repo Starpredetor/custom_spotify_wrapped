@@ -1,4 +1,4 @@
-### Welcome to your own spotify wrapped.
+# Welcome to your own spotify wrapped.
 
 Although this feels legit this may vary from the actual wrapped you get on your account since the algorithm I used varies from the actual algorithm used by spotify
 
