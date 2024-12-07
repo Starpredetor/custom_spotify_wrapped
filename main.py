@@ -28,13 +28,14 @@ class DataProcessor:
 
         data = data[data['year'] == 2024]
         data = data[data['skipped'] != True]  
+        data = data[data['ms_played'] > 30000]
         return data
 
     def top_artists(self):
-        return self.data['artist'].value_counts().head(4)
+        return self.data['artist'].value_counts().head(5)
 
     def top_songs(self):
-        return self.data['track'].value_counts().head(4)
+        return self.data['track'].value_counts().head(5)
     
     def total_time(self):
         return round(self.data['ms_played'].sum()/60000)
